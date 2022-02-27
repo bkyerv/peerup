@@ -5,8 +5,8 @@ export default function Experience() {
         <h2 className="mb-8 text-4xl text-gray-700 text-center font-bold">
           How it works
         </h2>
-        <div className="border ">
-          <ul className="px-8 h-full flex gap-4 sm:flex-row flex-col justify-around">
+        <div className="py-2">
+          <ul className="px-4 h-full flex gap-4 sm:flex-row flex-col justify-around">
             {steps.map((step) => (
               <StepCard key={step.id} step={step.step} descr={step.descr} />
             ))}
@@ -19,11 +19,15 @@ export default function Experience() {
 
 function StepCard({ step, descr }) {
   return (
-    <li className="mx-8 sm: mx-0  p-1 flex-1 bg-gradient-to-br from-red-300 to-blue-300 rounded-md shadow-sm ">
-      <div className="p-4 w-full h-full flex flex-col justify-around bg-white rounded-md">
-        <span className="text-xl font-bold text-gray-700">{step}</span>
-        <p className="text-gray-700">{descr}</p>
+    <li>
+      <div className="p-1 w-20 bg-gradient-to-br from-red-300 to-blue-300 rounded-md shadow-sm ">
+        <div className="p-1 bg-white rounded-md">
+          <h4 className="text-xl font-bold text-gray-700 text-center">
+            {step}
+          </h4>
+        </div>
       </div>
+      <p className="text-gray-700">{descr}</p>
     </li>
   );
 }

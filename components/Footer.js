@@ -31,22 +31,9 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="text-center flex gap-8 justify-center items-center">
-          <Link href="/">
-            <a className="basis-4/15 text-sm text-gray-500 tracking-wider">
-              Privacy
-            </a>
-          </Link>
-          <Link href="/">
-            <a className="basis-4/15 text-sm text-gray-500 tracking-wider">
-              Terms of
-              <br /> service
-            </a>
-          </Link>
-          <span className="basis-7/15 text-sm text-gray-500 tracking-wider">
-            2022 &copy; Peerup. <br /> All Rights Reserved
-          </span>
-        </div>
+        <span className="max-w-md mx-auto text-sm text-gray-500 tracking-wider">
+          2022 &copy; Peerup. All Rights Reserved
+        </span>
       </div>
     </>
   );

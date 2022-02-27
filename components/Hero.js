@@ -35,7 +35,7 @@ export default function Hero() {
           </button>
           {isOpen ? (
             <div className="w-32 p-4 outline outline-2 outline-pink-500 rounded-md">
-              <p className="text-pink-500">it doesn\'t trigger any action yet</p>
+              <p className="text-pink-500">it doesnt trigger any action yet</p>
             </div>
           ) : (
             ""

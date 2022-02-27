@@ -7,13 +7,13 @@ import BoldMessage from "../components/BoldMessage";
 
 export default function Home() {
   return (
-    <>
+    <div className="flex flex-col items-center">
       <Hero />
       <Experience />
       <Trust />
       <BoldMessage />
       <KeyAdvantages />
       <Footer />
-    </>
+    </div>
   );
 }

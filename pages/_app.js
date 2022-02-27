@@ -5,7 +5,7 @@ import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div>
+    <div className="flex flex-col items-center">
       <Head>
         <title>Peer Up</title>
         <link rel="icon" href="/static/icon.jpg" />

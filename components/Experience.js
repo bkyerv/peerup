@@ -8,7 +8,7 @@ export default function Experience() {
         <div className="h-64 ">
           <ul className="h-full flex justify-around">
             {steps.map((step) => (
-              <StepCard step={step.step} descr={step.descr} />
+              <StepCard key={step.id} step={step.step} descr={step.descr} />
             ))}
           </ul>
         </div>
@@ -30,16 +30,19 @@ function StepCard({ step, descr }) {
 
 const steps = [
   {
+    id:1,
     step: "Step 1",
     descr:
       "Sign Up Answer a few questions to enable our matching system to place you in a Circle that's",
   },
   {
+    id:2,
     step: "Step 2",
     descr:
       "Sign Up Answer a few questions to enable our matching system to place you in a Circle that's",
   },
   {
+    id:3,
     step: "Step 3",
     descr:
       "Sign Up Answer a few questions to enable our matching system to place you in a Circle that's",

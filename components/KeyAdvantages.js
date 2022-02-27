@@ -30,18 +30,22 @@ function Card({ content }) {
 
 const pros = [
   {
+    id:1,
     pro: "Online approach to mental health doesn't sound serious",
     con: "All our moderators are professional mental health specialists and the sessions are designed using scientific and proven methods",
   },
   {
+    id:2,
     pro: "Not sure if group approach is for me",
     con: "Groups are small and prescreened",
   },
   {
+    id:3,
     pro: "No time for physical visits",
     con: "Everything is online",
   },
   {
+    id:4,
     pro: "Therapy sessions are expensive",
     con: "Affordable than traditional therapy",
   },

@@ -9,8 +9,10 @@ export default function Trust() {
         </h2>
         <div className="flex">
           {feedback.map((i) => {
-            const { imgPath, name, message } = i;
-            return <Card imgPath={imgPath} name={name} message={message} />;
+            const { imgPath, name, message, id} = i;
+            return (
+              <Card key={id} imgPath={imgPath} name={name} message={message} />
+            );
           })}
         </div>
       </div>
@@ -36,22 +38,21 @@ function Card({ imgPath, name, message }) {
 
 const feedback = [
   {
-    id:1,
+    id: 1,
     imgPath: "/profile_picture/avatar-2.png",
     name: "Michael Changler",
     message:
       "My friends were amazing after my mother died... but my Circle really got me - they understood my grief, the sadness and my dark humor.",
   },
   {
-
-    id:2,
+    id: 2,
     imgPath: "/profile_picture/avatar-3.png",
     name: "Anonymous",
     message:
       "My friends were amazing after my mother died... but my Circle really got me - they understood my grief, the sadness and my dark humor.",
   },
   {
-    id:3,
+    id: 3,
     imgPath: "/profile_picture/avatar-1.png",
     name: "Ada Lovelace",
     message:

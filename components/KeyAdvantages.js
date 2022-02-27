@@ -6,7 +6,7 @@ export default function KeyAdvantages() {
           What holds you back?
         </h2>
         {pros.map((pro) => (
-          <Card content={pro} />
+          <Card key={pro.id} content={pro} />
         ))}
       </div>
     </>

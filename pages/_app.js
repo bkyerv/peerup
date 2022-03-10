@@ -26,10 +26,14 @@ function MyApp({ Component, pageProps }) {
               </Link>
             </li>
             <li>
-              <a>Login</a>
+              <Link href='/login'>
+                <a>Login</a>
+              </Link>
             </li>
             <li>
-              <a>Join PeerUp</a>
+              <Link href='/signup'>
+                <a>Join PeerUp</a>
+              </Link>
             </li>
           </ul>
         </nav>

@@ -20,18 +20,17 @@ export default function Hero() {
       <div className="p-4 flex flex-col gap-4">
         <div>
           <h1 className="my-2 py-4 text-7xl font-bold text-transparent bg-gradient-to-r from-indigo-400 to-red-500 bg-clip-text">
-            opening slogan
+            hero message
           </h1>
           <p className="text-gray-700">
-            short description of the service. Usually is one or two sentences
-            that offer detailed exlanation about the product
+            Connect with peers who struggle with negative feelings at work. Join our support groups led by facilitators.
           </p>
           <button
             onClick={() => setIsOpen(true)}
             ref={domNode}
             className="my-4 py-2 px-4 text-white bg-indigo-500 rounded-md shadow-md"
           >
-            Join us for free &rarr;
+            Get started &rarr;
           </button>
           {isOpen ? (
             <div className="w-32 p-4 outline outline-2 outline-pink-500 rounded-md">

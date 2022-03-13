@@ -37,7 +37,9 @@ function MyApp({ Component, pageProps }) {
             </li>
           </ul>
         </nav>
-        <Component {...pageProps} />
+        <div>
+          <Component {...pageProps} />
+        </div>
       </div>
     </div>
   );
